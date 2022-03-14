@@ -8,8 +8,6 @@
 </head>
 <body>
 <header>
-    <div class="cursor"></div>
-    <div class="dot"></div>
 
 </header>
 
@@ -205,36 +203,6 @@
     sal({
         once: false,
     });
-
-    const cursor = document.querySelector('.cursor');
-
-    document.addEventListener('mousemove', e => {
-        cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
-    })
-
-    document.addEventListener('click', () => {
-        cursor.classList.add("expand");
-
-        setTimeout(() => {
-            cursor.classList.remove("expand");
-        }, 500)
-    })
-
-
-    const dot = document.querySelector('.dot');
-
-    document.addEventListener('mousemove', e => {
-        dot.setAttribute("style", "top: "+(e.pageY - 1)+"px; left: "+(e.pageX - 1)+"px;")
-    })
-
-    document.addEventListener('click', () => {
-        dot.classList.add("expand");
-
-        setTimeout(() => {
-            dot.classList.remove("expand");
-        }, 500)
-    })
-
 </script>
 
 </body>
