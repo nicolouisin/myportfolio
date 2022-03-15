@@ -4,7 +4,7 @@ body, html {
 }
 
 
-/*-----------------------------SIDE MENU-----------------------------------*/
+/*-----------------------------SCROLLBAR-----------------------------------*/
 
 
 /* width */
@@ -60,13 +60,19 @@ body, html {
     font-family: "Proxima Nova", sans-serif;
     color: #ffffff;
     margin-left: 20px;
-;
+
 }
 
 .start li:hover .circle {
     fill: white;
 }
 
+
+@media screen and (max-width: 1300px) {
+    .menu {
+        display: none;
+    }
+}
 
 
 /*-------------------------------hero--------------------------------*/
@@ -194,6 +200,11 @@ body, html {
     grid-column: span 2;
 }
 
+.grid_gallery-row-2 {
+    grid-row: span 2 ;
+}
+
+
 .grid_relative {
     position: relative;
 }
@@ -223,14 +234,11 @@ body, html {
     opacity: 0;
 }
 
-.grid_gallery-row-2 {
-    grid-row: span 2 ;
-}
 
 @media screen and (max-width: 1024px) {
     .grid_gallery {
         --num-cols: 2;
-        --row-height: 200px;
+        --row-height: 400px;
     }
 }
 

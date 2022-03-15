@@ -13,3 +13,8 @@ window.addEventListener('scroll', () => {
     updateList();
 })
 
+let btnBack = document.querySelector('.back');
+btnBack.addEventListener('click', () => {
+    window.history.back();
+});
+

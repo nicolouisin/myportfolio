@@ -1,0 +1,115 @@
+body, html {
+    background-color: #DEEEEF;
+    scroll-behavior: smooth;
+}
+
+
+
+.container {
+    padding: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.return {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.return:hover img{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transform: translateX(-10px);
+    transition: 0.5s ease-in-out;
+}
+
+.return img {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.return a {
+    text-decoration: none;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 1.4em;
+    color: #159196;
+}
+
+.container h1 {
+    font-family: "Proxima Nova", sans-serif;
+    color: #159196;
+    font-size: 5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.project_form {
+    margin-top: 100px;
+}
+
+.project_date {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.project_date h2 {
+    font-family: "Proxima Nova", sans-serif;
+    color: #159196;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.project_date .project p {
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    font-size: 1.2em;
+    max-width: 300px;
+}
+
+.project_date .date p {
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    font-size: 1.2em;
+    max-width: 300px;
+}
+
+.project_date .description p {
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    font-size: 1.2em;
+    max-width: 700px;
+}
+
+.project_gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.project_gallery {
+    margin-top: 100px;
+    --num-cols:1;
+    --row-height: 600px;
+    --gap: 15px;
+
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.long {
+    grid-row: span 3 ;
+
+
+}
+
+
