@@ -5,6 +5,7 @@
     <title>La Casa Mila</title>
     <link rel="icon" type="image/png" href="img/monogramme.png" />
     <link rel="stylesheet" href="css/projets.css">
+    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
 </head>
 <body>
 
@@ -13,13 +14,18 @@
         <img src="img/blue_arrow.svg" alt="fleche retour">
         <a class="back" href="index.html" >BACK</a>
     </div>
-    <h1>La Casa Milà</h1>
+    <h1 data-sal="slide-up"
+        data-sal-duration="1200"
+        data-sal-delay="400"
+        data-sal-easing="ease-out-bounce">La Casa Milà</h1>
     <div class="project_form">
         <div class="project_date">
             <div class="project">
                 <h2>PROJECT</h2>
-                <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-                    Maecenas faucibus mollis interdum.</p>
+                <ul>
+                    <li> Visual identity - logo proposal | Adobe Illustrator</li>
+                    <li> Creation of a graphic model</li>
+                </ul>
             </div>
             <div class="date">
                 <h2>DATE</h2>
@@ -27,20 +33,34 @@
             </div>
             <div class="description">
                 <h2>DESCRIPTION</h2>
-                <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-                    Maecenas faucibus mollis interdum.</p>
+                <p>Antoni Gaudi, the great Spanish architect. Here, my colleagues and I had to create the website
+                    of one of Mr. Gaudi's monuments, La Casa Milà</p>
+                <p>Elements addressed:</p>
+                <ul>
+                    <li> Design and creation of a logo (on Illustrator)</li>
+                    <li> Creating a guideline</li>
+                    <li> Creation of the website model</li>
+                </ul>
             </div>
         </div>
         <div class="project_gallery">
-            <img src="img/bugdays1.jpg" alt="">
-            <img class="long" src="img/bugdays4.png" alt="">
-            <img src="img/bugdays3.jpg" alt="">
+            <img src="img/casamila_accueil.png" alt="">
+            <img class="long" src="img/Guidelines_Casa_Mila.png" alt="">
+            <img src="img/casamila_menu.png" alt="">
         </div>
     </div>
 </div>
 
 <script src="js/main.js"></script>
 
+<script src="./node_modules/sal.js/dist/sal.js"></script>
+
+<script>
+
+    sal({
+        once: false,
+    });
+</script>
 
 </body>
 </html>

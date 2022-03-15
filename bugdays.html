@@ -5,6 +5,7 @@
     <title>BUG Days</title>
     <link rel="icon" type="image/png" href="img/monogramme.png" />
     <link rel="stylesheet" href="css/projets.css">
+    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
 </head>
 <body>
 
@@ -13,13 +14,19 @@
         <img src="img/blue_arrow.svg" alt="fleche retour">
         <a class="back" href="index.html" >BACK</a>
     </div>
-    <h1>BUG Days</h1>
+    <h1 data-sal="slide-up"
+        data-sal-duration="1200"
+        data-sal-delay="700"
+        data-sal-easing="ease-out-bounce">BUG DAYS</h1>
     <div class="project_form">
         <div class="project_date">
             <div class="project">
                 <h2>PROJECT</h2>
-                <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-                    Maecenas faucibus mollis interdum.</p>
+                <ul>
+                    <li> Visual identity - logo proposal | Adobe Illustrator</li>
+                    <li> Creation of a graphic charter</li>
+                    <li> File | Adobe InDesign</li>
+                </ul>
             </div>
             <div class="date">
                 <h2>DATE</h2>
@@ -27,8 +34,13 @@
             </div>
             <div class="description">
                 <h2>DESCRIPTION</h2>
-                <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-                    Maecenas faucibus mollis interdum.</p>
+                <p>For this project I created the whole graphic identity of an E-sport event, the BUG days.</p>
+                <p>Elements addressed:</p>
+                <ul>
+                    <li> Design and creation of a new logo (on Illustrator)</li>
+                    <li> Creation of a graphic charter</li>
+                    <li> Creation of a model for the home page of the website</li>
+                </ul>
             </div>
         </div>
         <div class="project_gallery">
@@ -41,6 +53,14 @@
 
 <script src="js/main.js"></script>
 
+<script src="./node_modules/sal.js/dist/sal.js"></script>
+
+<script>
+
+    sal({
+        once: false,
+    });
+</script>
 
 </body>
 </html>

@@ -3,8 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <title>Unfettered</title>
+    <link rel="icon" type="image/png" href="img/monogramme.png" />
+    <link rel="stylesheet" href="css/projets.css">
+    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
+
 </head>
 <body>
+
+<div class="container">
+    <div class="return">
+        <img src="img/blue_arrow.svg" alt="fleche retour">
+        <a class="back" href="index.html" >BACK</a>
+    </div>
+    <h1 data-sal="slide-up"
+        data-sal-duration="1200"
+        data-sal-delay="400"
+        data-sal-easing="ease-out-bounce">Unfettered</h1>
+    <div class="project_form">
+        <div class="project_date">
+            <div class="project">
+                <h2>PROJECT</h2>
+                <ul>
+                    <li> Illustration creation | Adobe Illustrator</li>
+                    <li> Creating animations | Adobe After Effects</li>
+                    <li> Video editing | Davinci Resolve</li>
+                </ul>
+            </div>
+            <div class="date">
+                <h2>DATE</h2>
+                <p>2021</p>
+            </div>
+            <div class="description">
+                <h2>DESCRIPTION</h2>
+                <p>For this motion design project, we were given a brief to create a video
+                    about emancipation.</p>
+                <p>Elements addressed:</p>
+                <ul>
+                    <li> Choosing appropriate music</li>
+                    <li> Animation of the various illustrations created</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="project_gallery_video">
+        <video controls width="540" height="960">
+            <source src="video/projet_final.mp4"
+                    type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+
+<script src="./node_modules/sal.js/dist/sal.js"></script>
+
+<script>
+
+    sal({
+        once: false,
+    });
+</script>
 
 </body>
 </html>

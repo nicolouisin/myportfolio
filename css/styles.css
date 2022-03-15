@@ -106,6 +106,20 @@ body, html {
     letter-spacing: 50px;
 }
 
+@media screen and (max-width: 1024px) {
+
+    .hero_title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30vh;
+    }
+
+}
+
+
+
+
 .hero_title svg {
     height: 120px;
 }
@@ -121,6 +135,8 @@ body, html {
     color: #ffffff;
     margin-top: -70px;
 }
+
+
 
 .scroll {
     text-align: center;
@@ -155,6 +171,17 @@ body, html {
     50%  { opacity: 1;  }
     100% { transform:translate(0,20px); opacity: 0; }
 }
+
+@media screen and (max-width: 1024px) {
+
+
+    .scroll {
+        display: none;
+    }
+
+}
+
+
 
 .scroll a {
     margin-top: 20px;

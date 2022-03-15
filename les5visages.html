@@ -2,9 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Les 5 visages de De Vinci</title>
+    <link rel="icon" type="image/png" href="img/monogramme.png" />
+    <link rel="stylesheet" href="css/projets.css">
+    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
 </head>
 <body>
+
+<div class="container">
+    <div class="return">
+        <img src="img/blue_arrow.svg" alt="fleche retour">
+        <a class="back" href="index.html" >BACK</a>
+    </div>
+    <h1 data-sal="slide-up"
+        data-sal-duration="1200"
+        data-sal-delay="400"
+        data-sal-easing="ease-out-bounce">Les 5 visages de De Vinci</h1>
+    <div class="project_form">
+        <div class="project_date">
+            <div class="project">
+                <h2>PROJECT</h2>
+                <ul>
+                    <li> Visual identity - logo proposal | Adobe Illustrator</li>
+                    <li> Creation of a graphic model</li>
+                    <li> Website integration - CMS Wordpress</li>
+                </ul>
+            </div>
+            <div class="date">
+                <h2>DATE</h2>
+                <p>2021</p>
+            </div>
+            <div class="description">
+                <h2>DESCRIPTION</h2>
+                <p>My mission here was to make a webdocumentary
+                    about Leonardo da Vinci, one of the greatest geniuses in history.</p>
+                <p>Elements addressed:</p>
+                <ul>
+                    <li> Design and creation of a new logo (on Illustrator)</li>
+                    <li> Creation of a graphic charter</li>
+                    <li> Integration of the webdocumentary using the CMS Wordpress</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="project_gallery">
+            <img src="img/les5visagesentrer.png" alt="">
+            <img class="long" src="img/les5visagesaccueil.png" alt="">
+            <img src="img/les5visageslepeintre.png" alt="">
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+
+<script src="./node_modules/sal.js/dist/sal.js"></script>
+
+<script>
+
+    sal({
+        once: false,
+    });
+</script>
 
 </body>
 </html>
