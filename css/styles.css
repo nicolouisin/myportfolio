@@ -184,9 +184,56 @@ body, html {
     object-fit: cover;
 }
 
+.grid_gallery img:hover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .grid_gallery-col-2 {
     grid-column: span 2;
 }
+
+.grid_relative {
+    position: relative;
+}
+
+.grid_relative .caption {
+    width: 100%;
+    position: absolute;
+    background-color: rgba(92, 255, 250, 0.70);
+    bottom: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+}
+
+.grid_relative .caption h3 {
+    color: #ffffff;
+    font-family: "Proxima Nova", sans-serif;
+}
+
+
+.grid_relative:hover .caption {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(92, 255, 250, 0.70);
+    bottom: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
 
 .grid_gallery-row-2 {
     grid-row: span 2 ;
@@ -322,6 +369,21 @@ body, html {
     margin-top: 50px;
     cursor: pointer;
 }
+
+#contact_form_div input[type="submit"]:hover
+{
+    width:80px;
+    height:40px;
+    border:none;
+    font-size:17px;
+    background-color: #4ea3a3;
+    color:#ffffff;
+    font-weight:bold;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
 
 #contact_form_div textarea:focus, input:focus{
     outline: none;

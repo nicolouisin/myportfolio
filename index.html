@@ -5,6 +5,8 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script defer src="function.js"></script>
 </head>
 <body>
 <header>
@@ -116,35 +118,63 @@
         <div>
             <section id="work">
                 <div class="grid_gallery">
-                        <img   data-sal="slide-up"
-                               data-sal-duration="1200"
-                               data-sal-delay="300"
-                               data-sal-easing="ease-out-bounce"
-                               src="img/MockupMacBUGDAYS.jpg" class="grid_gallery-col-2 .grid_gallery-row-2" alt="Image 1">
-                        <img
-                                data-sal="slide-up"
-                                data-sal-duration="1200"
-                                data-sal-delay="400"
-                                data-sal-easing="ease-out-bounce"
-                                src="img/MockupMacBUGDAYS.jpg" class="gallery__img" alt="Image 2">
-                        <img
-                                data-sal="slide-up"
-                                data-sal-duration="1200"
-                                data-sal-delay="500"
-                                data-sal-easing="ease-out-bounce"
-                                src="img/MockupMacBUGDAYS.jpg" class="gallery__img" alt="Image 3">
-                        <img
-                                data-sal="slide-up"
-                                data-sal-duration="1200"
-                                data-sal-delay="600"
-                                data-sal-easing="ease-out-bounce"
-                                src="img/MockupMacBUGDAYS.jpg" class="gallery__img" alt="Image 4">
-                        <img
-                                data-sal="slide-up"
-                                data-sal-duration="1200"
-                                data-sal-delay="700"
-                                data-sal-easing="ease-out-bounce"
-                                src="img/MockupMacBUGDAYS.jpg" class="gallery__img" alt="Image 5">
+                    <div data-sal="slide-up"
+                         data-sal-duration="1200"
+                         data-sal-delay="300"
+                         data-sal-easing="ease-out-bounce"
+                         class="grid_relative grid_gallery-col-2 .grid_gallery-row-2">
+                        <img src="img/MockupMacBUGDAYS.jpg" alt="Image 1">
+                        <div class="caption">
+                            <h3>Titre</h3>
+                            <p>Une histoire sans fin</p>
+                        </div>
+                    </div>
+                    <div data-sal="slide-up"
+                         data-sal-duration="1200"
+                         data-sal-delay="400"
+                         data-sal-easing="ease-out-bounce"
+                         class="grid_relative">
+                        <img src="img/MockupMacBUGDAYS.jpg" class="gallery__img" alt="Image 2">
+                        <div class="caption">
+                            <h3>Titre</h3>
+                            <p>Une histoire sans fin</p>
+                        </div>
+                    </div>
+                    <div data-sal="slide-up"
+                         data-sal-duration="1200"
+                         data-sal-delay="500"
+                         data-sal-easing="ease-out-bounce"
+                         class="grid_relative">
+                        <img src="img/MockupMacBUGDAYS.jpg" class="gallery__img" alt="Image 3">
+                        <div class="caption">
+                            <h3>Titre</h3>
+                            <p>Une histoire sans fin</p>
+                        </div>
+                    </div>
+                    <div data-sal="slide-up"
+                         data-sal-duration="1200"
+                         data-sal-delay="600"
+                         data-sal-easing="ease-out-bounce"
+                         class="grid_relative">
+                        <img src="img/MockupMacBUGDAYS.jpg" class="gallery__img" alt="Image 4">
+                        <a href="">
+                            <div class="caption">
+                                <h3>Titre</h3>
+                                <p>Une histoire sans fin</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-sal="slide-up"
+                         data-sal-duration="1200"
+                         data-sal-delay="700"
+                         data-sal-easing="ease-out-bounce"
+                         class="grid_relative">
+                        <img src="img/MockupMacBUGDAYS.jpg" class="gallery__img" alt="Image 5">
+                        <div class="caption">
+                            <h3>Titre</h3>
+                            <p>Une histoire sans fin</p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
