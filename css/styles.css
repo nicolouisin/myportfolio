@@ -86,7 +86,7 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 10vh;
+    padding-top: 6vh;
 }
 
 .hero {
@@ -96,7 +96,7 @@ body, html {
     background-size: cover;
     width: 100%;
     height: 85vh;
-
+    position: relative;
 }
 
 .hero h1 {
@@ -117,9 +117,6 @@ body, html {
 
 }
 
-
-
-
 .hero_title svg {
     height: 120px;
 }
@@ -137,10 +134,11 @@ body, html {
 }
 
 
-
 .scroll {
-    text-align: center;
-    margin-top: 10vh;
+    left: 50%;
+    bottom: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
 }
 
 #dive {
@@ -172,16 +170,13 @@ body, html {
     100% { transform:translate(0,20px); opacity: 0; }
 }
 
-@media screen and (max-width: 1024px) {
-
+@media screen and (max-width: 768px) {
 
     .scroll {
         display: none;
     }
 
 }
-
-
 
 .scroll a {
     margin-top: 20px;
@@ -279,13 +274,13 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #21DBDB;
-    height: 1550px;
+    height: 1750px;
     position: relative;
 }
 
 .blur {
     width: 100%;
-    height: 1850px;
+    height: 2050px;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -296,7 +291,7 @@ body, html {
 
 .contact_container {
     width: 80%;
-    height: 1400px;
+    height: 1600px;
     position: absolute;
     transform: translate(-50%);
     background-color: rgba(255, 255, 255, 0.23);
@@ -304,6 +299,47 @@ body, html {
     left: 50%;
     backdrop-filter: blur(20px);
 }
+
+@media screen and (max-width: 1024px) {
+
+    #contact {
+        margin-top: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #21DBDB;
+        height: 1950px;
+        position: relative;
+    }
+
+
+    .blur {
+        width: 100%;
+        height: 2250px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: rgba(255, 255, 255, .15);
+        backdrop-filter: blur(20px);
+        top: -200px;
+    }
+
+
+    .contact_container {
+        width: 80%;
+        height: 1800px;
+        position: absolute;
+        transform: translate(-50%);
+        background-color: rgba(255, 255, 255, 0.23);
+        top: 300px;
+        left: 50%;
+        backdrop-filter: blur(20px);
+    }
+
+
+
+}
+
 
 .contact_container h2 {
     font-family: "Proxima Nova", sans-serif;
@@ -331,6 +367,21 @@ body, html {
     color: #ffffff;
     text-align: center;
 }
+
+@media screen and (max-width: 1024px) {
+
+    .contact_container a {
+        font-size: 1.8em;
+    }
+
+
+
+    .contact_container .apropos p {
+        font-size: 1.8em;
+    }
+
+}
+
 
 .contact_container .apropos h3 {
     max-width: 80%;
@@ -411,6 +462,8 @@ body, html {
 #contact_form_div textarea:focus, input:focus{
     outline: none;
 }
+
+
 
 
 
